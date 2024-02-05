@@ -1,0 +1,63 @@
+
+*, *::before, *::after, #root {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0; 
+}
+
+
+:root{
+
+    --primary-text: #FFF;
+    --secondary-text: #D0D6F9;
+    --tertiary-clr: #0B0D17;
+    --ff-heading: 'Bellefair', serif;
+    --ff-text: 'Barlow Condensed', sans-serif;
+    --ff-text-weight: 100;
+    --ff-heading-weight: lighter;
+
+}
+
+
+body, html, #root{
+    height: 100%;
+}
+ 
+.fade--y--anim {
+
+    animation: fadeInY  1s ease-in-out 1;
+}
+
+
+.fade--x--anim {
+
+    animation: fadeInX 1s ease-in-out 1 ; 
+
+}
+ 
+
+@keyframes fadeInY  {
+
+    0%{
+        transform: translateY(25px);
+        opacity: 0;
+    }
+
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInX {
+
+    0%{
+        transform: translateX(50px);
+        opacity: 0;
+    }
+
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}

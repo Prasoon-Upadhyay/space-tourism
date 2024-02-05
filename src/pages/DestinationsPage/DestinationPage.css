@@ -1,0 +1,128 @@
+:root {
+    --bg-img-dest-desktop: url('../../assets/destination/background-destination-desktop.jpg');
+    --bg-img-dest-tablet:  url('../../assets/destination/background-destination-tablet.jpg');
+    --bg-img-dest-mobile:  url('../../assets/destination/background-destination-mobile.jpg');
+}
+
+.dest--page {
+    background-image: var(--bg-img-dest-desktop) ;
+    height: 100%; 
+    z-index: -10; 
+    background-size: cover; 
+    overflow-y: hidden;
+}
+
+.dest--page--sub--div {
+    display: flex;
+    margin: 2% 10%;
+}
+
+
+
+.dest--page--container {
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+    margin: 3%;
+}
+
+.current--planet-div { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+}
+ 
+ 
+
+
+.dest--page--subheading {
+    color: var(--primary-text);
+    justify-content: center;
+    text-transform: uppercase;
+    font-family: var(--ff-text);
+    letter-spacing: 3px;
+    font-weight: var(--ff-text-weight);
+
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem; 
+    font-size: 1.5rem;
+}
+
+.dest--page--subheading span {
+    opacity: 0.3;
+    font-weight: 900;
+}
+
+
+
+.dest--page--content {
+
+    display: flex ;
+    flex-direction: column;
+    gap: 2.5rem;     
+}
+
+
+@media (max-width: 1000px) {
+
+    .dest--page {
+        background-image: var(--bg-img-dest-tablet) ;
+    }
+
+    .dest--page--container {
+        flex-direction: column;
+        justify-content: center; 
+        gap: 0.5rem;
+    }
+
+    .dest--page--content {
+        justify-content: center;
+        text-align: center;
+        
+    }
+
+    .dest--page--subheading {
+        font-size: 1rem;
+    }
+    
+    .current--planet-div img {
+        width: 45%; 
+    }
+
+    .dest--page-img-head {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 750px) {
+    .current--planet-div img {
+        width: 25%; 
+    }
+    .dest--page--container { 
+        margin: 1%;
+    }
+
+    .dest--page--sub--div { 
+        justify-content: center;
+    }
+
+    .dest--page-img-head{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    .dest--page--content {
+
+        display: flex ;
+        flex-direction: column;
+        gap: 1rem;     
+    }
+    
+}

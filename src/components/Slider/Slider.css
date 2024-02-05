@@ -1,0 +1,30 @@
+
+
+.--slider {
+    display: flex;
+    flex-direction: row;
+    gap: 1.25rem;
+}
+
+.slider--link {
+
+    cursor: pointer;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background-color: var(--primary-text);
+    opacity: 0.2;
+    
+    transition: 300ms;
+}
+
+
+.slider--link:hover {
+    opacity: 0.5;
+}
+
+.slide--active {
+    opacity: 1;
+}
+
+ 

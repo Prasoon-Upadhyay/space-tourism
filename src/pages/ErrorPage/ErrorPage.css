@@ -1,0 +1,80 @@
+:root {
+    
+    --bg-img-technology-desktop: url('../../assets/technology/background-technology-desktop.jpg');
+}
+
+
+.error--page {
+    display: flex;
+    flex-direction: column;
+     
+    height: 100%; 
+    background-size: cover;
+    background-image: var(--bg-img-technology-desktop);
+}
+
+.error--page--container {
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center; 
+    text-align: center;
+    gap: 1.25rem;
+
+    margin: 10% 15%;
+    isolation: isolate;
+    
+    position: relative;
+    padding: 5%;
+    
+    border: 1px solid inherit;
+}
+
+.error--page--container::after {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    backdrop-filter: blur(30px);
+    background-color: rgba(171, 164, 164, 0.1);
+
+    z-index: -1
+
+    /* background-color: #fff; */
+}
+
+
+.error--code {
+
+    display: flex;
+    flex-direction: row;
+    gap: 1.25rem;
+    letter-spacing: 2px;
+    font-family: var(--ff-text);
+    color: var(--primary-text);
+    font-weight: var(--ff-text-weight);
+}
+
+.error--code span {
+
+    opacity: 0.5;
+    letter-spacing: 4px;
+}
+
+.error--code--msg {
+    font-family: var(--ff-heading);
+    color: var(--primary-text);
+    font-weight: var(--ff-heading-weight);
+    opacity: 0.4;
+}
+
+.error--message {
+    font-family: sans-serif;
+    line-height: 1.5;
+    color: var(--secondary-text);
+    opacity: 0.8;
+    width: 20rem;
+}

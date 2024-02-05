@@ -1,0 +1,158 @@
+
+
+:root {
+    --bg-img-home-desktop: url('../../assets/home/background-home-desktop.jpg');
+    --bg-img-home-tablet: url('../../assets/home/background-home-tablet.jpg');
+    --bg-img-home-mobile: url('../../assets/home/background-home-mobile.jpg')
+}
+
+.page {
+    background-image: var(--bg-img-home-desktop) ;
+    height: 100%; 
+    z-index: -10;
+    background-size: cover; 
+}
+
+.container {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    margin: 10%;
+}
+
+.text-container {
+
+    display: flex;
+    flex-direction: column; 
+    gap: 1.5rem;
+    
+    margin: 0 auto;
+
+    color: #fff;
+
+}
+
+.sub-heading {
+
+    color: var(--secondary-text);
+    
+    font-family: var(--ff-text);
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.heading { 
+
+    font-family: var(--ff-heading);
+    font-weight: var(--ff-heading-weight);
+    font-size: 6rem;
+    letter-spacing: 3px;
+}
+
+.content {  
+    color: var(--secondary-text);
+
+    width: 40%;
+
+    font-family: sans-serif;
+    line-height: 2;
+}
+
+.btn--div {
+    display: flex;
+    align-items: flex-end;
+}
+
+.btn {
+    position: relative;
+    cursor: pointer;
+    z-index: 1;
+    font-family: var(--ff-heading);
+    font-weight: var(--ff-heading-weight);
+    font-size: 2rem;
+    text-align: center;
+    letter-spacing: 2px;
+    
+    border: 0;
+    border-radius: 50%; 
+    
+    width: 12rem;
+    height: 12rem;
+    
+}
+
+.btn::after {
+    content: '';
+
+    position: absolute;
+    background-color: #fff; 
+    opacity: 0.15;
+
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 0;
+
+    border-radius: 50%; 
+    transform: scale(0); 
+    
+    
+    transform-origin: center;
+    transition: transform ease-in-out 400ms;
+}
+
+
+.btn:hover::after {
+    content: ''; 
+    transform: scale(1.6); 
+}
+
+
+
+/* -----------------------------------Media Queries -------------------------------------------------*/
+
+@media (max-width : 1000px) {
+
+    .page {
+        background-image: var(--bg-img-home-tablet);
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; 
+        margin: 0%; 
+    }
+
+    .text-container {
+        margin: 8% auto;
+        text-align: center;
+        align-items: center;
+    }
+
+    .content {
+        font-size: 0.75rem;
+    }
+
+    .sub-heading {
+        font-size: 1rem;
+    }
+}
+
+
+@media (max-width: 750px) {
+
+    .text-container {
+        margin: 7% auto;
+    }
+ 
+
+    .btn:hover::after {
+        transform: scale(1.5)
+    }
+}
