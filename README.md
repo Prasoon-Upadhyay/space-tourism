@@ -6,14 +6,7 @@ URL : https://65c0aa7892a93312ccb4b3fb--warm-strudel-57d139.netlify.app/
 # .
 # .
 # .
-# .
-# .
-# .
-# .
-# .
-# .
-# .
-# .
+# . 
 
 
 # React + TypeScript + Vite
