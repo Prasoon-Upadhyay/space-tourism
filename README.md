@@ -1,7 +1,7 @@
 ### Challenge at FrontEnd Mentors:
 URL : https://www.frontendmentor.io/challenges/space-tourism-multipage-website-gRWj1URZ3
 
-### Challange Solution
+### Challange Solution & Live Website hosted:
 URL : https://65c0aa7892a93312ccb4b3fb--warm-strudel-57d139.netlify.app/
 
 
