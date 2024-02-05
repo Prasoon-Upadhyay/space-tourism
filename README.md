@@ -6,8 +6,8 @@ URL : https://65c0aa7892a93312ccb4b3fb--warm-strudel-57d139.netlify.app/
 
 ### Built Using
 ### ![Built Using](https://skills.thijs.gg/icons?i=js,html,css,ts,react)
-### Built using : 
-    ReactJS, TypeScript, HTML5, Vanilla CSS, Vite
+
+
 # .
 # .
 # . 
