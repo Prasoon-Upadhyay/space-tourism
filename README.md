@@ -3,6 +3,7 @@ URL : https://www.frontendmentor.io/challenges/space-tourism-multipage-website-g
 
 ### Challange Solution & Live Website hosted:
 URL : https://65c0aa7892a93312ccb4b3fb--warm-strudel-57d139.netlify.app/
+[![Built using : ](https://skills.thijs.gg/icons?i=reactjs,typescript,nodejs,css3, html5&theme=light)](https://skills.thijs.gg)
 ### Built using : 
     ReactJS, TypeScript, HTML5, Vanilla CSS, Vite
 # .
